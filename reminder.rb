@@ -1,7 +1,15 @@
-@tasks = [] # empty array to be added to 
+#@tasks = [] 
+@tasks = {
+  "task" => "placeholdertask", "deadline" => "Friday"
+}
+# empty array to be added to 
+
 
 def view_list # method to load the list for the user
+  @tasks.each do |info|
+    puts info
     
+  end
 end
 
 
@@ -20,8 +28,6 @@ end
 def delete_list # method to delete an item from the list
 
 end
-
-
 
 puts "Choose what you would like to do:" # user menu; puts all the options
 puts "a) view list"
