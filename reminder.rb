@@ -1,13 +1,17 @@
 #@tasks = [] 
 @tasks = {
-  "task" => "placeholdertask", "deadline" => "Friday"
+  "placeholdertask" => "Friday"
 }
 # empty array to be added to 
 
 
 def view_list # method to load the list for the user
-  @tasks.each do |key, value|
-    puts "#{key}: #{value}"
+  @tasks.each do |task, dline| #defines what is what
+    index = 0 #set up for the loop below
+    while index < @tasks.length
+      puts "Task: #{task}, Deadline: #{dline}" #outputting schedule
+      index += 1 #increasing index to stop loop
+    end
   end
 end
 
