@@ -6,9 +6,8 @@
 
 
 def view_list # method to load the list for the user
-  @tasks.each do |info|
-    puts info
-    
+  @tasks.each do |key, value|
+    puts "#{key}: #{value}"
   end
 end
 
